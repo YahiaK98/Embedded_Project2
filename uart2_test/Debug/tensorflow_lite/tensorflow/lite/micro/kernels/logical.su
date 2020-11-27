@@ -1,0 +1,32 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+types.h:184:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+types.h:194:18:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+types.h:195:18:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+types.h:200:15:void tflite::RuntimeShape::SetDim(int, int32_t)	24	static
+types.h:210:19:int32_t* tflite::RuntimeShape::DimsData()	16	static
+types.h:213:25:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+types.h:217:25:const int32_t* tflite::RuntimeShape::DimsDataUpTo5D() const	16	static
+types.h:219:15:void tflite::RuntimeShape::Resize(int)	16	static
+types.h:260:30:static tflite::RuntimeShape tflite::RuntimeShape::ExtendedShape(int, const tflite::RuntimeShape&)	24	static
+types.h:271:14:int tflite::RuntimeShape::FlatSize() const	32	static
+types.h:286:3:tflite::RuntimeShape::RuntimeShape(int, const tflite::RuntimeShape&, int)	40	static
+types.h:385:12:int tflite::Offset(const tflite::RuntimeShape&, int, int, int, int)	32	static
+types.h:487:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&)	32	static
+types.h:497:12:int tflite::MatchingFlatSize(const tflite::RuntimeShape&, const tflite::RuntimeShape&, const tflite::RuntimeShape&)	40	static
+common.h:719:12:int tflite::SubscriptToIndex(const tflite::NdArrayDesc<4>&, int, int, int, int)	24	static
+kernel_util.h:30:26:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:39:32:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:45:26:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+logical.cc:32:14:TfLiteStatus tflite::ops::micro::logical::{anonymous}::LogicalImpl(TfLiteContext*, TfLiteNode*, bool (*)(bool, bool))	208	static
+logical.cc:62:6:bool tflite::ops::micro::logical::{anonymous}::LogicalOr(bool, bool)	16	static
+logical.cc:64:14:TfLiteStatus tflite::ops::micro::logical::{anonymous}::LogicalOrEval(TfLiteContext*, TfLiteNode*)	16	static
+logical.cc:68:6:bool tflite::ops::micro::logical::{anonymous}::LogicalAnd(bool, bool)	16	static
+logical.cc:70:14:TfLiteStatus tflite::ops::micro::logical::{anonymous}::LogicalAndEval(TfLiteContext*, TfLiteNode*)	16	static
+logical.cc:77:20:TfLiteRegistration tflite::ops::micro::Register_LOGICAL_OR()	16	static
+logical.cc:90:20:TfLiteRegistration tflite::ops::micro::Register_LOGICAL_AND()	16	static
+kernel_util.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = bool]	16	static
+kernel_util.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = bool]	16	static
+binary_function.h:64:13:void tflite::reference_ops::BinaryFunction(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = bool; T1 = bool; T2 = bool]	40	static
+binary_function.h:30:13:void tflite::reference_ops::BroadcastBinaryFunction4DSlow(const tflite::RuntimeShape&, const T1*, const tflite::RuntimeShape&, const T2*, const tflite::RuntimeShape&, R*, R (*)(T1, T2)) [with R = bool; T1 = bool; T2 = bool]	160	static
+common.h:812:13:void tflite::NdArrayDescsForElementwiseBroadcast(const tflite::RuntimeShape&, const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*, tflite::NdArrayDesc<N>*) [with int N = 4]	88	static
+common.h:801:13:void tflite::CopyDimsToDesc(const tflite::RuntimeShape&, tflite::NdArrayDesc<N>*) [with int N = 4]	24	static

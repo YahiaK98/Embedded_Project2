@@ -1,0 +1,10 @@
+kernel_util.h:30:26:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:39:32:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util.h:45:26:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+circular_buffer.cc:70:7:void* tflite::ops::micro::circular_buffer::Init(TfLiteContext*, const char*, size_t)	24	static
+circular_buffer.cc:75:14:TfLiteStatus tflite::ops::micro::circular_buffer::Prepare(TfLiteContext*, TfLiteNode*)	64	static
+circular_buffer.cc:123:6:void tflite::ops::micro::circular_buffer::EvalInt8(const int8_t*, int, int, int8_t*)	24	static
+circular_buffer.cc:128:14:TfLiteStatus tflite::ops::micro::circular_buffer::Eval(TfLiteContext*, TfLiteNode*)	48	static
+circular_buffer.cc:163:21:TfLiteRegistration* tflite::ops::micro::Register_CIRCULAR_BUFFER()	4	static
+kernel_util.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
