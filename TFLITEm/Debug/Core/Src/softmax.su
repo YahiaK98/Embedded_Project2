@@ -1,0 +1,141 @@
+limits:524:7:static constexpr signed char std::numeric_limits<signed char>::min()	4	static
+limits:527:7:static constexpr signed char std::numeric_limits<signed char>::max()	4	static
+limits:594:7:static constexpr unsigned char std::numeric_limits<unsigned char>::min()	4	static
+limits:597:7:static constexpr unsigned char std::numeric_limits<unsigned char>::max()	4	static
+limits:859:7:static constexpr short int std::numeric_limits<short int>::min()	4	static
+limits:862:7:static constexpr short int std::numeric_limits<short int>::max()	4	static
+limits:1138:7:static constexpr long int std::numeric_limits<long int>::min()	4	static
+limits:1141:7:static constexpr long int std::numeric_limits<long int>::max()	4	static
+cmath:222:3:constexpr float std::exp(float)	16	static
+cmath:1771:3:constexpr float std::round(float)	16	static
+fixedpoint.h:237:21:IntegerType gemmlowp::RoundingHalfSum(IntegerType, IntegerType) [with IntegerType = long int]	56	static
+stl_algobase.h:219:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+stl_algobase.h:219:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = short int]	16	static
+fixedpoint.h:340:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = long int]	64	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+types.h:184:3:tflite::RuntimeShape::~RuntimeShape()	16	static
+types.h:194:18:int32_t tflite::RuntimeShape::DimensionsCount() const	16	static
+types.h:195:18:int32_t tflite::RuntimeShape::Dims(int) const	16	static
+types.h:213:25:const int32_t* tflite::RuntimeShape::DimsData() const	16	static
+types.h:438:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	40	static
+types.h:641:12:int tflite::FlatSizeSkipDim(const tflite::RuntimeShape&, int)	32	static
+types.h:653:12:int tflite::MatchingFlatSizeSkipDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&)	40	static
+common - Copy.h:149:16:int32_t tflite::MultiplyByQuantizedMultiplierGreaterThanOne(int32_t, int32_t, int)	24	static
+common - Copy.h:156:16:int32_t tflite::MultiplyByQuantizedMultiplier(int32_t, int32_t, int)	32	static
+common - Copy.h:312:13:void tflite::gen_lut(float (*)(float), float, float, int16_t*, int)	96	static
+common - Copy.h:335:16:int16_t tflite::generic_int16_table_lookup(int16_t, const int16_t*)	32	static
+common - Copy.h:617:16:int32_t tflite::GetReciprocal(int32_t, int, int*)	40	static
+softmax.h:30:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	80	static
+stl_algobase.h:195:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = long int]	16	static
+softmax.h:148:16:int16_t tflite::reference_ops::SoftMaxCalculateExp(const tflite::SoftmaxParams&, const int16_t*, int, int16_t, int, int)	48	static
+softmax.h:165:13:void tflite::reference_ops::SoftmaxInt16(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, int16_t*)	152	static
+kernel_util.h:147:12:int tflite::NumDimensions(const TfLiteTensor*)	16	static
+kernel_util.h:152:12:int tflite::NumInputs(const TfLiteNode*)	16	static
+kernel_util.h:153:12:int tflite::NumOutputs(const TfLiteNode*)	16	static
+kernel_util - Copy.h:30:26:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util - Copy.h:39:32:const TfLiteEvalTensor* tflite::micro::GetEvalInput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+kernel_util - Copy.h:45:26:TfLiteEvalTensor* tflite::micro::GetEvalOutput(const TfLiteContext*, const TfLiteNode*, int)	24	static
+softmax.cc:33:14:TfLiteStatus tflite::{anonymous}::CalculateSoftmaxParams(TfLiteContext*, const TfLiteTensor*, TfLiteTensor*, const TfLiteSoftmaxParams*, tflite::SoftmaxParams*)	104	static
+softmax.cc:93:6:void tflite::{anonymous}::SoftmaxFloat(const TfLiteEvalTensor*, TfLiteEvalTensor*, const tflite::SoftmaxParams&)	88	static
+softmax.cc:101:6:void tflite::{anonymous}::SoftmaxQuantized(const TfLiteEvalTensor*, TfLiteEvalTensor*, const tflite::SoftmaxParams&)	232	static
+softmax.cc:132:7:void* tflite::{anonymous}::SoftmaxInit(TfLiteContext*, const char*, size_t)	24	static
+softmax.cc:174:27:tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+softmax.cc:174:27:static float tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+softmax.cc:174:27:tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+softmax.cc:176:27:tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>	16	static
+softmax.cc:176:27:static float tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	16	static
+softmax.cc:176:27:tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::operator float (*)(float)() const	16	static
+softmax.cc:137:14:TfLiteStatus tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)	72	static
+softmax.cc:186:14:TfLiteStatus tflite::{anonymous}::SoftmaxEval(TfLiteContext*, TfLiteNode*)	88	static
+softmax.cc:212:20:TfLiteRegistration tflite::Register_SOFTMAX()	24	static
+stl_algobase.h:219:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+fixedpoint.h:368:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, ExponentType) [with IntegerType = long int; ExponentType = int]	56	static
+cppmath.h:36:1:T tflite::TfLiteRound(T) [with T = float]	16	static
+stl_algobase.h:195:5:constexpr const _Tp& std::min(const _Tp&, const _Tp&) [with _Tp = float]	16	static
+common - Copy.h:226:5:int tflite::CountLeadingZeros(T) [with T = long unsigned int]	16	static
+fixedpoint.h:492:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 0]	24	static
+fixedpoint.h:854:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::one_over_one_plus_x_for_x_in_0_1(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = long int]	48	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 0]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 0]	32	static
+fixedpoint.h:698:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 0>]	16	static
+kernel_util - Copy.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util - Copy.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = float]	16	static
+kernel_util - Copy.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = unsigned char]	16	static
+kernel_util - Copy.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = unsigned char]	16	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = unsigned char; OutputT = unsigned char]	136	static
+kernel_util - Copy.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = signed char]	16	static
+kernel_util - Copy.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = short int]	16	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = signed char; OutputT = short int]	136	static
+kernel_util - Copy.h:54:4:T* tflite::micro::GetTensorData(TfLiteEvalTensor*) [with T = signed char]	16	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = signed char; OutputT = signed char]	136	static
+kernel_util - Copy.h:60:10:const T* tflite::micro::GetTensorData(const TfLiteEvalTensor*) [with T = short int]	16	static
+fixedpoint.h:64:10:tRawType gemmlowp::Dup(typename gemmlowp::FixedPointRawTypeTraits<tRawType>::ScalarRawType) [with tRawType = long int]	16	static
+fixedpoint.h:70:14:tIntegerType gemmlowp::BitAnd(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:141:14:tIntegerType gemmlowp::ShiftRight(tIntegerType, int) [with tIntegerType = long int]	16	static
+fixedpoint.h:200:14:tIntegerType gemmlowp::MaskIfLessThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:94:14:tIntegerType gemmlowp::Add(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:186:14:tIntegerType gemmlowp::MaskIfGreaterThan(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:519:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = long int; int tIntegerBits = 0]	8	static
+fixedpoint.h:601:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::RoundingHalfSum(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 0]	24	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 2]	32	static
+fixedpoint.h:698:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 2>]	16	static
+fixedpoint.h:550:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 0; int tIntegerBits_b = 2]	40	static
+fixedpoint.h:596:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator+(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 2]	24	static
+fixedpoint.h:519:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::One() [with tRawType = long int; int tIntegerBits = 2]	8	static
+fixedpoint.h:597:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 2]	24	static
+fixedpoint.h:550:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 2; int tIntegerBits_b = 2]	40	static
+fixedpoint.h:679:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 2; tRawType = long int; int tIntegerBitsSrc = 4]	32	static
+fixedpoint.h:560:48:gemmlowp::FixedPoint<tRawType, (tExponent + tIntegerBits)> gemmlowp::ExactMulByPot(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = long int; int tIntegerBits = 2]	32	static
+fixedpoint.h:679:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = long int; int tIntegerBitsSrc = 1]	32	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:106:14:tIntegerType gemmlowp::Sub(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+stl_algobase.h:219:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = unsigned char]	16	static
+fixedpoint.h:517:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::Zero() [with tRawType = long int; int tIntegerBits = 12]	8	static
+fixedpoint.h:492:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 5]	24	static
+fixedpoint.h:596:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator+(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 12]	24	static
+fixedpoint.h:757:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 5]	80	static
+fixedpoint.h:679:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 12; tRawType = long int; int tIntegerBitsSrc = 0]	32	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 12]	16	static
+fixedpoint.h:550:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 0; int tIntegerBits_b = 0]	40	static
+fixedpoint.h:368:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, ExponentType) [with IntegerType = long int; ExponentType = unsigned int]	56	static
+stl_algobase.h:219:5:constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = signed char]	16	static
+fixedpoint.h:157:14:tIntegerType gemmlowp::MaskIfNonZero(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:480:30:static const ScalarRawType gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawMax() [with tRawType = long int; int tIntegerBits = 0]	8	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 2]	16	static
+fixedpoint.h:492:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 2]	24	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 4]	16	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 2; IntegerType = long int]	16	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 1]	16	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 1; IntegerType = long int]	16	static
+fixedpoint.h:421:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -1; IntegerType = long int]	16	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 12]	32	static
+fixedpoint.h:536:12:gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType& gemmlowp::FixedPoint<tRawType, tIntegerBits>::raw() [with tRawType = long int; int tIntegerBits = 5]	16	static
+fixedpoint.h:492:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::RawType) [with tRawType = long int; int tIntegerBits = 12]	24	static
+fixedpoint.h:509:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -2; tRawType = long int; int tIntegerBits = 5]	8	static
+fixedpoint.h:498:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::FromScalarRaw(gemmlowp::FixedPoint<tRawType, tIntegerBits>::ScalarRawType) [with tRawType = long int; int tIntegerBits = 5]	32	static
+fixedpoint.h:597:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator-(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 5]	24	static
+fixedpoint.h:598:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator&(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 5]	24	static
+fixedpoint.h:679:39:gemmlowp::FixedPoint<tRawType, tIntegerBitsDst> gemmlowp::Rescale(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tIntegerBitsDst = 0; tRawType = long int; int tIntegerBitsSrc = 5]	32	static
+fixedpoint.h:732:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_interval_between_negative_one_quarter_and_0_excl(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = long int]	48	static
+fixedpoint.h:632:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::SelectUsingMask(tRawType, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 0]	32	static
+fixedpoint.h:619:1:tRawType gemmlowp::MaskIfZero(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 5]	16	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -12; IntegerType = long int]	16	static
+fixedpoint.h:88:14:tIntegerType gemmlowp::BitNot(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:396:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 2; IntegerType = long int]	48	static
+fixedpoint.h:396:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 1; IntegerType = long int]	48	static
+fixedpoint.h:126:14:tIntegerType gemmlowp::ShiftLeft(tIntegerType, OffsetType) [with tIntegerType = long int; OffsetType = int]	40	static
+fixedpoint.h:149:14:tIntegerType gemmlowp::SelectUsingMask(tIntegerType, tIntegerType, tIntegerType) [with tIntegerType = long int]	32	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = 5; IntegerType = long int]	16	static
+fixedpoint.h:509:21:static gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::FixedPoint<tRawType, tIntegerBits>::ConstantPOT() [with int Exponent = -3; tRawType = long int; int tIntegerBits = 0]	8	static
+fixedpoint.h:596:1:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::operator+(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 0]	24	static
+fixedpoint.h:570:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -2; tRawType = long int; int tIntegerBits = 0]	16	static
+fixedpoint.h:570:36:gemmlowp::FixedPoint<tRawType, tIntegerBits> gemmlowp::SaturatingRoundingMultiplyByPOT(gemmlowp::FixedPoint<tRawType, tIntegerBits>) [with int tExponent = -1; tRawType = long int; int tIntegerBits = 0]	16	static
+fixedpoint.h:660:36:gemmlowp::FixedPoint<tRawType, tIntegerBits_a> gemmlowp::AddSaturatingIf16Bit(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 0]	24	static
+fixedpoint.h:165:14:tIntegerType gemmlowp::MaskIfZero(tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:421:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -12; IntegerType = long int]	16	static
+fixedpoint.h:82:14:tIntegerType gemmlowp::BitXor(tIntegerType, tIntegerType) [with tIntegerType = long int]	16	static
+fixedpoint.h:396:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, 1>::eval(IntegerType) [with int Exponent = 5; IntegerType = long int]	48	static
+fixedpoint.h:427:13:IntegerType gemmlowp::SaturatingRoundingMultiplyByPOT(IntegerType) [with int Exponent = -2; IntegerType = long int]	16	static
+fixedpoint.h:295:13:IntegerType gemmlowp::AddSaturatingIf16Bit(IntegerType, IntegerType) [with IntegerType = long int]	16	static
+fixedpoint.h:421:22:static IntegerType gemmlowp::ImplSaturatingRoundingMultiplyByPOT<Exponent, IntegerType, -1>::eval(IntegerType) [with int Exponent = -2; IntegerType = long int]	16	static
+fixedpoint.h:286:22:static IntegerType gemmlowp::AddSaturatingIf16BitImpl<IntegerType, Is16Bit>::Run(IntegerType, IntegerType) [with IntegerType = long int; bool Is16Bit = false]	16	static

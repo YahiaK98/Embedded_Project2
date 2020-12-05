@@ -1,0 +1,2 @@
+audio_provider.cc:28:14:TfLiteStatus GetAudioSamples(tflite::ErrorReporter*, int, int, int*, int16_t**)	64	static
+audio_provider.cc:53:9:int32_t LatestAudioTimestamp()	4	static
