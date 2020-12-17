@@ -1,0 +1,3 @@
+frontend_util.c:22:6:FrontendFillConfigWithDefaults	8	static
+frontend_util.c:30:5:FrontendPopulateState	32	static
+frontend_util.c:79:6:FrontendFreeStateContents	8	static

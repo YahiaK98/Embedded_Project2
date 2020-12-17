@@ -1,0 +1,3 @@
+pcan_gain_control.c:19:9:WideDynamicFunction	12	static
+pcan_gain_control.c:39:10:PcanShrink	0	static
+pcan_gain_control.c:47:6:PcanGainControlApply	24	static

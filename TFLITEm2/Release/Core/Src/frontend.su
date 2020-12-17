@@ -1,0 +1,2 @@
+frontend.c:19:23:FrontendProcessSamples	24	static
+frontend.c:67:6:FrontendReset	8	static
