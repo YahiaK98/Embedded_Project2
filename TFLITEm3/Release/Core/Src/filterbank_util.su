@@ -1,0 +1,4 @@
+filterbank_util.c:31:14:FreqToMel	8	static
+filterbank_util.c:24:6:FilterbankFillConfigWithDefaults	0	static
+filterbank_util.c:56:5:FilterbankPopulateState	96	static
+filterbank_util.c:213:6:FilterbankFreeStateContents	8	static

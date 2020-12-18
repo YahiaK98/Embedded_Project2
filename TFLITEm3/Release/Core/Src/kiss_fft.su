@@ -1,0 +1,6 @@
+kiss_fft.c:236:6:kf_work	88	static
+kiss_fft.c:337:14:kiss_fft_alloc	48	static
+kiss_fft.c:371:6:kiss_fft_stride	32	static
+kiss_fft.c:397:6:kiss_fft	0	static
+kiss_fft.c:403:6:kiss_fft_cleanup	0	static
+kiss_fft.c:408:5:kiss_fft_next_fast_size	16	static

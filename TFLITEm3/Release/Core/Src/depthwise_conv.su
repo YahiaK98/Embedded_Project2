@@ -1,0 +1,15 @@
+depthwise_conv.cc:101:7:void* tflite::{anonymous}::Init(TfLiteContext*, const char*, size_t)	8	static
+types.h:184:3:tflite::RuntimeShape::~RuntimeShape()	8	static
+types.h:195:18:int32_t tflite::RuntimeShape::Dims(int) const	8	static
+types.h:271:14:int tflite::RuntimeShape::FlatSize() const	8	static
+types.h:385:12:int tflite::Offset(const tflite::RuntimeShape&, int, int, int, int)	16	static
+types.h:438:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	16	static
+common - Copy.h:156:16:int32_t tflite::MultiplyByQuantizedMultiplier(int32_t, int32_t, int)	16	static
+depthwise_conv.h:22:13:void tflite::reference_integer_ops::DepthwiseConvPerChannel(const tflite::DepthwiseParams&, const int32_t*, const int32_t*, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, const int8_t*, const tflite::RuntimeShape&, const int32_t*, const tflite::RuntimeShape&, int8_t*)	184	static
+depthwiseconv_float.h:25:13:void tflite::reference_ops::DepthwiseConv(const tflite::DepthwiseParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	168	static
+padding.h:44:12:int tflite::ComputeOutSize(TfLitePadding, int, int, int, int)	0	static
+depthwise_conv.cc:106:14:TfLiteStatus tflite::{anonymous}::Prepare(TfLiteContext*, TfLiteNode*)	120	static
+kernel_util - Copy.h:30:26:TfLiteEvalTensor* tflite::micro::GetMutableEvalInput(const TfLiteContext*, const TfLiteNode*, int)	8	static
+depthwise_conv.cc:315:20:TfLiteRegistration tflite::Register_DEPTHWISE_CONV_2D()	16	static
+depthwiseconv_uint8.h:92:22:static void tflite::reference_ops::depthwise_conv::DepthwiseConvBasicKernel<output_rounding>::Run(const tflite::DepthwiseParams&, const tflite::RuntimeShape&, const uint8_t*, const tflite::RuntimeShape&, const uint8_t*, const tflite::RuntimeShape&, const int32_t*, const tflite::RuntimeShape&, uint8_t*) [with tflite::DepthwiseConvOutputRounding output_rounding = (tflite::DepthwiseConvOutputRounding)1]	184	static
+depthwise_conv.cc:273:14:TfLiteStatus tflite::{anonymous}::Eval(TfLiteContext*, TfLiteNode*)	488	static

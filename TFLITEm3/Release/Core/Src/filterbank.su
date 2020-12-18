@@ -1,0 +1,4 @@
+filterbank.c:21:6:FilterbankConvertFftComplexToEnergy	12	static
+filterbank.c:37:6:FilterbankAccumulateChannels	64	static
+filterbank.c:119:11:FilterbankSqrt	48	static
+filterbank.c:132:6:FilterbankReset	0	static

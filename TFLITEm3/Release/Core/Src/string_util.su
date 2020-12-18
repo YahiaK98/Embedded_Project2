@@ -1,0 +1,15 @@
+string_util.cc:68:5:int tflite::DynamicBuffer::WriteToBuffer(char**)	24	static
+string_util.cc:104:6:void tflite::DynamicBuffer::WriteToTensor(TfLiteTensor*, TfLiteIntArray*)	56	static
+string_util.cc:98:6:void tflite::DynamicBuffer::WriteToTensorAsVector(TfLiteTensor*)	16	static
+string_util.cc:120:5:int tflite::GetStringCount(const void*)	0	static
+string_util.cc:125:5:int tflite::GetStringCount(const TfLiteTensor*)	0	static
+string_util.cc:130:11:tflite::StringRef tflite::GetString(const void*, int)	8	static
+string_util.cc:139:11:tflite::StringRef tflite::GetString(const TfLiteTensor*, int)	8	static
+vector.tcc:554:5:void std::vector<_Tp, _Alloc>::_M_default_append(std::vector<_Tp, _Alloc>::size_type) [with _Tp = char; _Alloc = std::allocator<char>]	32	static
+stl_vector.h:689:7:void std::vector<_Tp, _Alloc>::resize(std::vector<_Tp, _Alloc>::size_type) [with _Tp = char; _Alloc = std::allocator<char>]	8	static
+vector.tcc:394:7:) [with _Args = {long int}; _Tp = long int; _Alloc = std::allocator<long int>]	32	static
+vector.tcc:95:7:) [with _Args = {long int}; _Tp = long int; _Alloc = std::allocator<long int>]	8	static
+string_util.cc:26:6:void tflite::DynamicBuffer::AddString(const char*, size_t)	24	static
+string_util.cc:32:6:void tflite::DynamicBuffer::AddString(const tflite::StringRef&)	0	static
+string_util.cc:44:6:void tflite::DynamicBuffer::AddJoinedString(const std::vector<tflite::StringRef>&, tflite::StringRef)	48	static
+string_util.cc:36:6:void tflite::DynamicBuffer::AddJoinedString(const std::vector<tflite::StringRef>&, char)	24	static
