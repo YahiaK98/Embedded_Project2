@@ -243,6 +243,9 @@ int main(void)
 	FeatureProvider* feature_provider = nullptr;
 	RecognizeCommands* recognizer = nullptr;
 	int8_t feature_buffer[kFeatureElementCount];
+	uint32_t timestamp;
+	char buf[50];
+	int buf_len = 0;
 	//int16_t samples[1];
   /* USER CODE END 1 */
 
@@ -328,6 +331,7 @@ int main(void)
    //float convF;
    //uint32_t converted;
    HAL_TIM_Base_Start (&htim1);
+   HAL_TIM_Base_Start(&htim16);
    //volatile int bit;
    __HAL_TIM_ENABLE_IT(&htim1,TIM_IT_CC1);
    int32_t previous_time = 0;
@@ -396,7 +400,7 @@ int main(void)
 	   	if(changeOfState)
 	   	{
 			changeOfState = 0;
-
+			timestamp = htim16.Instance->CNT;
 			TfLiteStatus invoke_status = interpreter.Invoke();
 			if (invoke_status != kTfLiteOk)
 			{
@@ -406,6 +410,11 @@ int main(void)
 			// Get the output from the model, and make sure it's the expected size and
 			// type.
 			TfLiteTensor* output = interpreter.output(0);
+
+			 buf_len = sprintf(buf,
+			                      "Inference took: %lu\r\n",
+			                      htim16.Instance->CNT - timestamp);
+			 HAL_UART_Transmit(&huart2, (uint8_t *)buf, buf_len, 100);
 
 			bool is_new_command = false;
 			int watchdogCounter = 0;
@@ -433,6 +442,10 @@ int main(void)
 				int len = sprintf(buf2, "%d ",carState);
 				HAL_UART_Transmit(&huart2, (uint8_t *)buf2, len, 100);
 			}
+			buf_len = sprintf(buf,
+						          "Command Recognition took: %lu\r\n",
+						          htim16.Instance->CNT - timestamp);
+						 HAL_UART_Transmit(&huart2, (uint8_t *)buf, buf_len, 100);
 			int tempState = 0;
 
 			if(!strcmp(found_command,"stop"))
