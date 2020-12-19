@@ -1,0 +1,26 @@
+softmax.cc:176:27:static float tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	0	static
+softmax.cc:132:7:void* tflite::{anonymous}::SoftmaxInit(TfLiteContext*, const char*, size_t)	8	static
+softmax.cc:174:27:static float tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)::<lambda(float)>::_FUN(float)	0	static
+fixedpoint.h:340:21:IntegerType gemmlowp::SaturatingRoundingDoublingHighMul(IntegerType, IntegerType) [with IntegerType = long int]	12	static
+types.h:184:3:tflite::RuntimeShape::~RuntimeShape()	8	static
+types.h:195:18:int32_t tflite::RuntimeShape::Dims(int) const	8	static
+types.h:438:12:int tflite::MatchingDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&, int)	16	static
+types.h:653:12:int tflite::MatchingFlatSizeSkipDim(const tflite::RuntimeShape&, int, const tflite::RuntimeShape&)	32	static
+common - Copy.h:312:13:void tflite::gen_lut(float (*)(float), float, float, int16_t*, int)	96	static
+softmax.cc:137:14:TfLiteStatus tflite::{anonymous}::SoftmaxPrepare(TfLiteContext*, TfLiteNode*)	80	static
+common - Copy.h:335:16:int16_t tflite::generic_int16_table_lookup(int16_t, const int16_t*)	0	static
+softmax.h:30:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const float*, const tflite::RuntimeShape&, float*)	80	static
+softmax.cc:212:20:TfLiteRegistration tflite::Register_SOFTMAX()	16	static
+fixedpoint.h:368:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, ExponentType) [with IntegerType = long int; ExponentType = int]	8	static
+softmax.h:165:13:void tflite::reference_ops::SoftmaxInt16(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const int16_t*, const tflite::RuntimeShape&, int16_t*)	96	static
+fixedpoint.h:854:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::one_over_one_plus_x_for_x_in_0_1(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = long int]	40	static
+common - Copy.h:617:16:int32_t tflite::GetReciprocal(int32_t, int, int*)	8	static
+fixedpoint.h:698:47:typename FixedPointType::ScalarRawType gemmlowp::RescaleConstantInitializer(int32_t) [with FixedPointType = gemmlowp::FixedPoint<long int, 0>]	8	static
+fixedpoint.h:550:55:gemmlowp::FixedPoint<tRawType, (tIntegerBits_a + tIntegerBits_b)> gemmlowp::operator*(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>, gemmlowp::FixedPoint<tRawType, tIntegerBits_b>) [with tRawType = long int; int tIntegerBits_a = 0; int tIntegerBits_b = 0]	8	static
+fixedpoint.h:368:20:IntegerType gemmlowp::RoundingDivideByPOT(IntegerType, ExponentType) [with IntegerType = long int; ExponentType = unsigned int]	8	static
+fixedpoint.h:732:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_interval_between_negative_one_quarter_and_0_excl(gemmlowp::FixedPoint<tRawType, 0>) [with tRawType = long int]	24	static
+fixedpoint.h:757:25:gemmlowp::FixedPoint<tRawType, 0> gemmlowp::exp_on_negative_values(gemmlowp::FixedPoint<tRawType, tIntegerBits_a>) [with tRawType = long int; int tIntegerBits = 5]	32	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = unsigned char; OutputT = unsigned char]	80	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = signed char; OutputT = short int]	88	static
+softmax.h:67:13:void tflite::reference_ops::Softmax(const tflite::SoftmaxParams&, const tflite::RuntimeShape&, const InputT*, const tflite::RuntimeShape&, OutputT*) [with InputT = signed char; OutputT = signed char]	80	static
+softmax.cc:186:14:TfLiteStatus tflite::{anonymous}::SoftmaxEval(TfLiteContext*, TfLiteNode*)	136	static
